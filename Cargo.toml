@@ -1,0 +1,28 @@
+[package]
+name = "pdhv"
+version = "1.0.0"
+authors = ["Charrier Killian"]
+homepage = "https://pdhv.fr/"
+edition = "2021"
+
+[dependencies]
+bytemuck = { version = "1.13.0", features = ["derive"] }
+env_logger = "0.10.0"
+image = { version = "0.24.5", features = ["png"] }
+pollster = "0.2.5"
+random_color = "0.6.1"
+raw-window-handle = "0.5.0"
+serde = { version = "1.0.152", features = ["derive"] }
+serde_json = "1.0.91"
+wgpu = "0.15.0"
+wgpu_glyph = { path = "tmp/wgpu_glyph" } #wgpu_glyph = "0.18.0"
+windows-sys = { version = "0.45.0", features = [
+					"Win32_System_SystemInformation",
+					"Win32_UI_WindowsAndMessaging",
+					"Win32_System_LibraryLoader",
+					"Win32_UI_Controls_Dialogs",
+					"Win32_System_Performance",
+					"Win32_Graphics_Gdi",
+					"Win32_Foundation",
+					"Win32_UI_HiDpi",
+					]}
